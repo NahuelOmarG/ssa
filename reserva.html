@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="stylereserva.css">
+</head>
+<body>
+    <header>
+        <h1>AluguelPRO</h1>
+    </header>
+
+    <main>
+        <form id="formCadastro">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br>
+
+            <label for="data">Data da Reserva:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <label for="quadra">Escolha a Quadra:</label>
+            <select id="quadra" name="quadra" required>
+                <option value="">Selecione</option>
+                <option value="futebol">Futebol</option>
+                <option value="vôlei">Vôlei</option>
+                <option value="basquete">Basquete</option>
+                
+            </select>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <div id="mensagemSucesso" style="display: none;">
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AluguelPRO. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scriptreserva.js"></script>
+</body>
+</html>
